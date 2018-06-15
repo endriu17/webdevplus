@@ -242,12 +242,12 @@ p {
 /* header>gradient */
 
 .gradient1 {
-  height: 40px;
+  height: 60px;
   width: 100%;
   background: #ed145b;
   transform: skewY(-1.1deg);
   position: absolute;
-  margin-top: -22px;
+  margin-top: -40px;
   z-index: -1;
 }
 
@@ -487,7 +487,6 @@ p {
 }
 .benefits .col-4  {
   padding: 3% 0;
-  display: inline;
   width: 25%;
   position: relative;
 }
@@ -498,11 +497,11 @@ p {
 }
 
 .benefits p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .benefits img {
-  height: 55px;
+  height: 15%;
   top: 25%;
   left: -25%;
   position: absolute;
@@ -513,19 +512,22 @@ p {
 /* content>join-us */
 
 .content-join {
-  height: 150px;
+  /* height: 50%; */
   background-color: #ed145b;
   color: #fff;
   text-align: center;
+  
 }
 
 .content-join p {
   font-size: 26px;
-  width: 45%;
+  width: 75%;
   float: left;
-  margin: 65px 0 auto 20%;
+  margin: 0;
+  padding: 5% 0;
   text-transform: uppercase;
   font-weight: lighter;
+  text-align: right;
 }
 
 .content-join span {
@@ -536,13 +538,11 @@ p {
   border: none;
   background-color: #fff;
   color: #ed145b;
-  width: 100px;
-  height: 28px;
-  border-radius: 10px;
-  display: inline-block;
-  margin-top: 65px;
-  margin-left: 10px;
-  font-size: 12px;
+  width: 10%;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 14px;
+  margin: 5% 0;
 }
 
 /* content>updates */
