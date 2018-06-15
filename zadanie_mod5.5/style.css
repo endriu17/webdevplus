@@ -1,0 +1,51 @@
+body {
+    padding-top: 50px;
+}
+
+/* NAV */
+
+nav .navbar-header a {
+    padding: 0;
+}
+
+/* CAROUSEL */
+
+[class*="picture"] {
+    min-height: 450px;
+}
+
+.picture-1,
+.picture-2,
+.picture-3,
+.picture-4,
+.picture-5 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.picture-1 {
+    background-image: url(https://placeimg.com/350/350/any/color);
+}
+
+.picture-2 {
+    background-image: url(https://placeimg.com/351/350/any/color);
+}
+
+.picture-3 {
+    background-image: url(https://placeimg.com/350/351/any/color);
+}
+
+.picture-4 {
+    background-image: url(https://placeimg.com/352/350/any/color);
+}
+
+.picture-5 {
+    background-image: url(https://placeimg.com/350/352/any/color);
+}
+
+/* TABS and MODAL*/
+
+.dynamic-tabs,
+.modal-info {
+    margin-top: 30px;
+}
