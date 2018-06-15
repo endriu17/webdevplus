@@ -352,6 +352,37 @@ p {
 
 /* content>sentences */
 
+
+
+.sentences  {
+  background-image: url(http://f.cl.ly/items/041C1d420T301g2i1S2H/wuw.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  background-blend-mode: multiply;
+  background-color: rgba(63, 57, 57, 0.658);
+  color: #fff;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+#arrowRight .fa-arrow-left {
+  float: left;
+  margin: auto 10%;
+}
+
+#arrowRight .fa-arrow-right {
+  float: right;
+  margin: auto 10%;
+}
+
+.sentences  a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
 .quotation  {
   font-size: 3em;
   color: #ed145b;
