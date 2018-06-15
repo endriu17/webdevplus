@@ -166,7 +166,8 @@ p {
   padding: 5% 0 0;
 }
 
-.nav ul li a, .nav ul li {
+.nav ul li a,
+.nav ul li {
   text-decoration: none;
   color: #fff;
   padding: 0 10px;
@@ -223,7 +224,7 @@ p {
   font-size: 1em;
 }
 
-.show-more  {
+.show-more {
   border: none;
   background-color: #ed145b;
   color: #fff;
@@ -294,8 +295,8 @@ p {
 
 .template-image {
   padding: 10% 0 0;
-  
 }
+
 .content-template .screen {
   width: 100%;
   position: relative;
@@ -313,6 +314,14 @@ p {
 
 .content-services {
   text-align: center;
+}
+
+.content-services .services-text {
+  padding: 1% 0;
+}
+
+.content-services .services-icons {
+  padding-bottom: 3%;
 }
 
 .icons-text {
@@ -352,9 +361,7 @@ p {
 
 /* content>sentences */
 
-
-
-.sentences  {
+.sentences {
   background-image: url(http://f.cl.ly/items/041C1d420T301g2i1S2H/wuw.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -364,35 +371,45 @@ p {
   color: #fff;
   font-style: italic;
   font-weight: lighter;
-  font-size: 18px;
 }
 
-#arrowRight .fa-arrow-left {
+.sentens .fa-angle-left {
   float: left;
   margin: auto 10%;
+  color: #9c9393b0;
+  padding: 3% 0;
 }
 
-#arrowRight .fa-arrow-right {
+.sentens .fa-angle-right {
   float: right;
   margin: auto 10%;
+  color: #9c9393b0;
+  padding: 3% 0;
 }
 
-.sentences  a {
+.sentens p {
+  font-size: 18px;
+  width: 50%;
+  margin: auto auto;
+  padding: 3% 0;
+}
+
+.sentences a {
   cursor: pointer;
   text-decoration: none;
   color: #fff;
 }
 
-.quotation  {
+.quotation {
   font-size: 3em;
   color: #ed145b;
+  padding: 1%;
 }
 
 /* content>prices */
 
 .content-prices {
   background-color: #f4f4f4;
-  /* top: 30px; */
   text-align: center;
   height: 400px;
 }
@@ -420,13 +437,29 @@ p {
   width: 70%;
 }
 
+.price-month,
+.price-info {
+  position: relative;
+  padding: 10px 0;
+}
+
 .content-prices button {
   border: none;
   border-radius: 20px;
   height: 24px;
   font-size: 10px;
-  width: 100px;
-  /* margin-bottom: -20px; */
+  width: 70%;
+  background-color: #ed145b;
+  color: #fff;
+}
+
+.content-prices .price-month button {
+  top: 85%;
+  left: 15%;
+  z-index: 2;
+  position: absolute;
+  background-color: #f4f4f4;
+  color: black;
 }
 
 .content-prices .col-2 {
@@ -443,11 +476,39 @@ p {
   background-color: #fff;
 }
 
-/* content>benefits */
-
-.benefits .col-4 {
-  display: inline-block;
+.business {
+  background-color: #ed145b;
 }
+
+/* content>benefits */
+.benefits {
+  margin: auto 22%;
+  
+}
+.benefits .col-4  {
+  padding: 3% 0;
+  display: inline;
+  width: 25%;
+  position: relative;
+}
+
+.benefits h3, .benefits p  {
+  width: 60%;
+  text-align: left;
+}
+
+.benefits p {
+  font-size: 16px;
+}
+
+.benefits img {
+  height: 55px;
+  top: 25%;
+  left: -25%;
+  position: absolute;
+
+}
+
 
 /* content>join-us */
 
@@ -498,7 +559,7 @@ p {
 
 /* content-tabs */
 
-.content-tabs .col-4  {
+.content-tabs .col-4 {
   margin: auto auto;
   padding: 3% 5px;
 }
@@ -550,7 +611,7 @@ p {
 
 .download-image {
   margin: 10%;
-  box-shadow: 3px 0px 8px 0px rgba(0,0,0,0.2), -3px 0px 8px 0px rgba(0,0,0,0.2);
+  box-shadow: 3px 0px 8px 0px rgba(0, 0, 0, 0.2), -3px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .download-text {
@@ -558,8 +619,6 @@ p {
   margin: 10% 0;
   text-align: left;
 }
-
-
 
 /* FOOTER */
 
