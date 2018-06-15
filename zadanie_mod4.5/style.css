@@ -1,0 +1,101 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* NAV */
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  width: 60%;
+  height: 50px;
+  justify-content: space-around;
+  background: rgb(128, 173, 194);
+  align-items: center;
+}
+
+.nav>ul>li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav > ul>li>a:hover {
+  color: rgb(21, 120, 167);
+  cursor:pointer;
+}
+
+/* JUMBOTRON */
+
+jumbotron {
+  display: flex;
+  height: 300px;
+  background: rgb(114, 168, 212);
+  align-items: center;
+  justify-content: center;
+}
+
+/* GALLERY */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* CONTENT */
+
+.content {
+  display: flex;
+  padding: 2px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content .text {
+  min-width: 200px;
+  min-height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(215, 215, 218);
+  margin: 2px;
+  padding: 5px;
+}
+
+/* FOOTER */
+
+.info {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  background: lightslategray;
+  color: #fff;
+}
+
+.copy,
+.firma,
+.adress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  padding: 5px;
+}
+
+.firma {
+  flex-grow: 2;
+}

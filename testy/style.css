@@ -1,0 +1,241 @@
+/* BODY */
+
+body    {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container  {
+    position: relative;
+    width: 100%;
+    /* margin: 0 10%; */
+}
+
+.row::before,
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='col-'] {
+    float: left;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-offset-0 {
+    margin-left: 0;
+}
+
+.col-offset-1 {
+    margin-left: 8.33%;
+}
+
+.col-offset-2 {
+    margin-left: 16.66%;
+}
+
+.col-offset-3 {
+    margin-left: 25%;
+}
+
+.col-offset-4 {
+    margin-left: 33.33%;
+}
+
+.col-offset-5 {
+    margin-left: 41.66%;
+}
+
+.col-offset-6 {
+    margin-left: 50%;
+}
+
+.col-offset-7 {
+    margin-left: 58.33%;
+}
+
+.col-offset-8 {
+    margin-left: 66.66%;
+}
+
+.col-offset-9 {
+    margin-left: 75%;
+}
+
+.col-offset-10 {
+    margin-left: 83.33%;
+}
+
+.col-offset-11 {
+    margin-left: 91.66%;
+}
+
+/* HEADER */
+
+/* header>hero */
+
+.hero   {
+    background-image: url('http://f.cl.ly/items/041C1d420T301g2i1S2H/wuw.png');
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* header>nav */
+
+/* header>hero-content */
+
+/* header>gradient */
+
+.gradient   {
+    height: 40px;
+    width: 100%;
+    background: #ed145b;
+    transform: skewY(-1.1deg);
+    position: absolute;
+    margin-top: -18px;
+    position: absolute;
+    z-index: -1;
+}
+
+/* CONTENT */
+
+
+/* content>template */
+
+/* content>services */
+
+.content-services   {
+    display: grid;
+}
+
+.icons-text {
+    text-align: center;
+}
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 1px solid red;
+    overflow: hidden;
+    text-align: center;
+    font-size: 10px;
+    margin: 0 auto;
+}
+
+.circle1    {
+    background-image: url(http://f.cl.ly/items/0S3x0l1A3S1G1S1a1r0o/ikona1.png);
+    background-size: cover;
+}
+
+.circle2    {
+    background-image: url(http://f.cl.ly/items/062o011z2d33431E3M2U/ikona2.png);
+    background-position: center;
+}
+
+.circle3    {
+    background-image: url(http://f.cl.ly/items/3x3X1R0M2X2x2T1u0L2F/ikona3.png);
+    background-position: cover;
+}
+
+.circle4    {
+    background-image: url(http://f.cl.ly/items/300g1G2w0Y3s361o0B0J/ikona4.png);
+    background-position: cover;
+}
+
+
+
+/* content>sentences */
+
+/* content>prices */
+
+/* content>benefits */
+
+.benefits .col-4    {
+    display: inline-block;
+}
+
+/* content>join-us */
+
+/* content>updates */
+
+/* content-tabs */
+
+.content-tabs   {
+    text-align: center;
+}
+
+.content-tabs img   {
+    height: 150px;
+    /* margin-bottom: 0; */
+    object-fit: cover;
+}
+
+.content-tabs   h4, .content-tabs p  {
+    margin: 0 0 20px 0;
+    padding: 10px;
+}
+
+[class*='tab-text'], [class*='tab-photo'] {
+    background-color: #f4f4f4;
+}
+
+.content-tabs .col-4 {
+    max-width: 215px;
+    /* margin: 0 auto; */
+    padding: 0 10px; 
+}
+
+/* content>hero-bottom */
+
+/* content>download */
+
+/* FOOTER */

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple site</title>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Lorem, ipsum dolor
+            <br>
+            <small>lorem ipsum dolor sit amet</small>
+        </h1>
+        <button type="submit" class="btn btn-primary">If You will...</button>
+    </div>
+    <div class="container">
+        <h2>Watch our gallery</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <img class="img-responsive" src="https://placeimg.com/350/350/any/grayscale">
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <img class="img-responsive" src="https://placeimg.com/350/350/any/grayscale">
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <img class="img-responsive" src="https://placeimg.com/350/350/any/grayscale">
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <img class="img-responsive" src="https://placeimg.com/350/350/any/grayscale">
+            </div>
+        </div>
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Smith</td>
+                    <td>1234567890</td>
+                    <td>john@smith.com</td>
+                </tr>
+                <tr>
+                    <td>Marry White</td>
+                    <td>2345678901</td>
+                    <td>marry@white.com</td>
+                </tr>
+                <tr>
+                    <td>Frank Black</td>
+                    <td>3456789012</td>
+                    <td>frank@black.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <form>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Type subject">
+            </div>
+            <div class="form-group">
+                <label for="email">Your email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="email@adress.com">
+            </div>
+            <div class="form-group">
+                <label for="InputMessage">Your message:</label>
+                <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required placeholder="Type here your message"></textarea>
+                <br>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.jumbotron  {
+    padding: 50px 30px;
+}
+
+.table  {
+    margin-top: 30px;
+    text-align: center;
+}
+
+table thead tr th {
+    text-align: center;
+}
+
+form    {
+    margin-bottom: 20%;
+}
+
+#subject    {
+    width: 30%;
+}
+
+#email  {
+    width: 30%;
+}
+
+#InputMessage   {
+    width: 50%;
+}

@@ -1,0 +1,73 @@
+h2 {
+    color: #505050;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.social {
+    margin: 5px auto;
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    background-color: #c8c7c7;
+}
+
+.icon-btn {
+    height: 75px;
+    width: 75px;
+    border: 0 #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 40px;
+    background-color: #ffffff;
+}
+
+.twitter {
+    color: #4099FF;
+}
+
+.facebook {
+    color: #3B5998;
+}
+
+.google-plus {
+    color: #DB5A3C;
+}
+
+.instagram {
+    color: #5C3D2E;
+}
+
+.github {
+    color: #4183C4;
+}
+
+.twitter:hover {
+    transform: scale(1.10);
+    color: #ffffff;
+    background-color: #4099FF;
+}
+
+.facebook:hover {
+    transform: scale(1.10);
+    color: #ffffff;
+    background-color: #3B5998;
+}
+
+.google-plus:hover {
+    transform: scale(1.10);
+    color: #ffffff;
+    background-color: #DB5A3C;
+}
+
+.instagram:hover {
+    transform: scale(1.10);
+    color: #ffffff;
+    background-color: #5C3D2E;
+}
+
+.github:hover {
+    transform: scale(1.10);
+    color: #ffffff;
+    background-color: #4183C4;
+}

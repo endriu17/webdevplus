@@ -1,0 +1,27 @@
+body    {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+/* .block-menu {
+    display: none;
+} */
+
+.hamburger div    {
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 25px;
+}
+
+.hamburger {
+    width: 30px;
+    display: block;
+    margin: 1em 0 0 1em;
+}
+
+.hamburger:hover  .menu>.block-menu {
+    display: block;
+    background: white;
+}
