@@ -204,7 +204,7 @@ p {
 
 .hero-content {
   text-align: center;
-  padding: 15% 0 0;
+  padding: 10% 0 0;
   color: #fff;
 }
 
@@ -304,7 +304,7 @@ p {
 .content-template .screen {
   width: 100%;
   position: relative;
-  bottom: -25px;
+  bottom: -40px;
 }
 
 /* content>services */
@@ -401,6 +401,10 @@ p {
   cursor: pointer;
   text-decoration: none;
   color: #fff;
+}
+
+.content-sentences .sentens i:hover  {
+  opacity: 0.7;
 }
 
 .quotation {
@@ -517,21 +521,20 @@ button:hover  {
 }
 
 .benefits p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .benefits img {
   top: 50%;
   left: 10%;
   position: absolute;
-  height: 70%;
+  height: 50%;
 }
 
 
 /* content>join-us */
 
 .content-join {
-  /* height: 50%; */
   background-color: #ed145b;
   color: #fff;
   text-align: center;
