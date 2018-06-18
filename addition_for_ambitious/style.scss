@@ -1,3 +1,5 @@
+/*  BODY */
+
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -5,6 +7,10 @@
 
 body {
     margin: 0;
+}
+
+p {
+    font-size: 14px;
 }
 
 .container {
@@ -120,10 +126,12 @@ body {
     margin-left: 91.66%;
 }
 
+/*VARIABLES*/
+
 $font-main: #fff;
 $fontbutton: #ed145b;
 $background1: #f4f4f4;
-$arrowcolor: #9c9393b0;
+$arrowcolor: #9c9393;
 $background-footer: #2b2b2b;
 .background-message {
     background-repeat: no-repeat;
@@ -147,8 +155,8 @@ $background-footer: #2b2b2b;
     border-radius: 20px;
 }
 
-// HEADER
-header {
+/* HEADER */
+.header {
     z-index: 1;
     .hero {
         background-image: url('http://f.cl.ly/items/041C1d420T301g2i1S2H/wuw.png');
@@ -162,35 +170,37 @@ header {
                 margin: 0;
                 font-size: 24px;
                 font-weight: bold;
-            }
-            .logo span {
-                font-weight: bold;
-                font-size: 26px;
-                color: $fontbutton;
-            }
-            ul li a,
-            ul li {
-                text-decoration: none;
-                color: $font-main;
-                padding: 0 10px;
-                font-size: 20px;
-            }
-            ul li a:hover {
-                color: $fontbutton;
-                cursor: pointer;
-            }
-            a.active {
-                color: $fontbutton;
-            }
-            ul li {
-                margin-top: 5px;
-                float: left;
+                span {
+                    font-weight: bold;
+                    font-size: 26px;
+                    color: $fontbutton;
+                }
             }
             ul {
                 list-style-type: none;
                 float: right;
                 margin: 0 auto;
                 padding-right: 20%;
+                li {
+                    margin-top: 5px;
+                    float: left;
+                    text-decoration: none;
+                    color: $font-main;
+                    padding: 0 10px;
+                    font-size: 20px;
+                    a {
+                        text-decoration: none;
+                        color: $font-main;
+                        padding: 0 10px;
+                        &:hover {
+                            color: $fontbutton;
+                            cursor: pointer;
+                        }
+                    }
+                    a.active {
+                        color: $fontbutton;
+                    }
+                }
             }
             p {
                 line-height: 30px;
@@ -199,7 +209,7 @@ header {
         }
         .hero-content {
             text-align: center;
-            padding: 10% 0 0;
+            padding: 15% 0 0;
             h1 {
                 text-transform: uppercase;
                 font-weight: lighter;
@@ -218,12 +228,17 @@ header {
             height: 32px;
             text-transform: uppercase;
             font-size: 12px;
+            &:hover {
+                background-color: $background1;
+                color: #000;
+                font-weight: bold;
+            }
         }
         button {
             margin-top: 30px;
         }
     }
-    .gradient1 {
+    .gradient {
         height: 60px;
         width: 100%;
         background: $fontbutton;
@@ -234,8 +249,11 @@ header {
     }
 }
 
-// CONTENT
-// ---template
+/* CONTENT */
+
+
+/* ---template */
+
 .content-template {
     background-color: $background1;
     h2 {
@@ -266,7 +284,7 @@ header {
         font-size: 12px;
     }
     .template-text {
-        padding: 10% 0;
+        padding: 1% 0;
     }
     .template-image {
         padding: 10% 0 0;
@@ -278,7 +296,7 @@ header {
     }
 }
 
-// ---services
+/* ---services */
 .content-services {
     text-align: center;
     h2 {
@@ -319,7 +337,7 @@ header {
     }
 }
 
-// ---sentences
+/* ---sentences--- */
 .content-sentences {
     .sentences {
         background-image: url(http://f.cl.ly/items/041C1d420T301g2i1S2H/wuw.png);
@@ -363,7 +381,7 @@ header {
     }
 }
 
-// ---prices
+/* ---prices---*/
 .content-prices {
     background-color: $background1;
     text-align: center;
@@ -389,6 +407,7 @@ header {
         &:hover {
             background-color: $background1;
             color: #000;
+            font-weight: bold;
         }
     }
     .price-month {
@@ -424,7 +443,7 @@ header {
     }
 }
 
-// ---benefits
+/*---benefits---*/
 .benefits {
     margin: auto 0;
     padding: 0 12%;
@@ -452,7 +471,7 @@ header {
     }
 }
 
-// ---join-us
+/* ---join-us---*/
 .content-join {
     background-color: $fontbutton;
     color: $font-main;
@@ -471,22 +490,25 @@ header {
         font-weight: bold;
     }
     button {
-        @extend .button-massage;
-        border-radius: 15px;
+        border: none;
+        background-color: $font-main;
+        color: $fontbutton;
+        width: 10%;
         padding: 5px;
+        border-radius: 15px;
         font-size: 16px;
         margin: 5% 0;
-        width: 10%;
         height: 34px;
         &:hover {
             background-color: #862a49;
-            color: #fff;
+            color: $font-main;
+            font-weight: bold;
             /* opacity: 0.3; */
         }
     }
 }
 
-// ---updates
+/* ---updates---*/
 .content-updates {
     text-align: center;
     h2 {
@@ -495,7 +517,7 @@ header {
     }
 }
 
-// ---content-tabs
+/* ---content-tabs--- */
 .content-tabs {
     text-align: center;
     .col-4 {
@@ -520,7 +542,7 @@ header {
     }
 }
 
-// ---hero-bottom
+/* ---hero-bottom--- */
 .hero-bottom {
     background-image: url('http://f.cl.ly/items/041C1d420T301g2i1S2H/wuw.png');
     padding: 5% 25%;
@@ -531,9 +553,21 @@ header {
         font-style: italic;
         font-size: 16px;
     }
+    .show-more {
+        @extend .button-massage;
+        width: 120px;
+        height: 32px;
+        text-transform: uppercase;
+        font-size: 12px;
+        &:hover {
+            background-color: $background1;
+            color: #000;
+            font-weight: bold;
+        }
+    }
 }
 
-// ---content-download
+/* ---content-download--- */
 .content-download {
     padding: 5%;
     .download-image img {
@@ -546,9 +580,21 @@ header {
         text-align: left;
         padding: 0 20%;
     }
+    .show-more {
+        @extend .button-massage;
+        width: 120px;
+        height: 32px;
+        text-transform: uppercase;
+        font-size: 12px;
+        &:hover {
+            background-color: $background1;
+            color: #000;
+            font-weight: bold;
+        }
+    }
 }
 
-// ---footer
+/* ---footer--- */
 .footer {
     background-color: $background-footer;
     color: $font-main;
@@ -561,6 +607,8 @@ header {
         width: 50%;
     }
 }
+
+/*---RWD ---*/
 
 @media (max-width: 767px) {
     .col-m-1 {
@@ -602,15 +650,24 @@ header {
     [class*="col-"] {
         padding: 1px;
     }
-    .nav {
-        padding: 5% 0;
-        ul li a,
-        ul li {
-            padding: 0 5px;
-            font-size: 16px;
-        }
-        ul li a:hover {
-            color: #fff;
+    .header {
+        .hero {
+            .nav {
+                padding: 0;
+                text-align: center;
+                .logo   {
+                    padding: 10px 0;
+                }
+                ul {
+                    padding: 10px 0;
+                }
+                a {
+                    font-size: 14px;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
         }
     }
     .benefits {
