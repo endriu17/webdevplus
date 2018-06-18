@@ -1,0 +1,657 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.row::before,
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*="col-"] {
+    float: left;
+    min-height: 1px;
+    /* padding: 12px; */
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-offset-0 {
+    margin-left: 0;
+}
+
+.col-offset-1 {
+    margin-left: 8.33%;
+}
+
+.col-offset-2 {
+    margin-left: 16.66%;
+}
+
+.col-offset-3 {
+    margin-left: 25%;
+}
+
+.col-offset-4 {
+    margin-left: 33.33%;
+}
+
+.col-offset-5 {
+    margin-left: 41.66%;
+}
+
+.col-offset-6 {
+    margin-left: 50%;
+}
+
+.col-offset-7 {
+    margin-left: 58.33%;
+}
+
+.col-offset-8 {
+    margin-left: 66.66%;
+}
+
+.col-offset-9 {
+    margin-left: 75%;
+}
+
+.col-offset-10 {
+    margin-left: 83.33%;
+}
+
+.col-offset-11 {
+    margin-left: 91.66%;
+}
+
+$font-main: #fff;
+$fontbutton: #ed145b;
+$background1: #f4f4f4;
+$arrowcolor: #9c9393b0;
+$background-footer: #2b2b2b;
+.background-message {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(63, 57, 57, 0.658);
+    text-align: center;
+    color: $font-main;
+}
+
+.line-massege {
+    color: $fontbutton;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.button-massage {
+    border: none;
+    background-color: $fontbutton;
+    color: $font-main;
+    border-radius: 20px;
+}
+
+// HEADER
+header {
+    z-index: 1;
+    .hero {
+        background-image: url('http://f.cl.ly/items/041C1d420T301g2i1S2H/wuw.png');
+        min-height: 550px;
+        @extend .background-message;
+        .nav {
+            padding: 5% 0 0;
+            .logo {
+                display: inline-block;
+                width: 25%;
+                margin: 0;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .logo span {
+                font-weight: bold;
+                font-size: 26px;
+                color: $fontbutton;
+            }
+            ul li a,
+            ul li {
+                text-decoration: none;
+                color: $font-main;
+                padding: 0 10px;
+                font-size: 20px;
+            }
+            ul li a:hover {
+                color: $fontbutton;
+                cursor: pointer;
+            }
+            a.active {
+                color: $fontbutton;
+            }
+            ul li {
+                margin-top: 5px;
+                float: left;
+            }
+            ul {
+                list-style-type: none;
+                float: right;
+                margin: 0 auto;
+                padding-right: 20%;
+            }
+            p {
+                line-height: 30px;
+                font-size: 20px;
+            }
+        }
+        .hero-content {
+            text-align: center;
+            padding: 10% 0 0;
+            h1 {
+                text-transform: uppercase;
+                font-weight: lighter;
+                font-size: 24px
+            }
+            span {
+                font-weight: bold;
+            }
+            .line {
+                @extend .line-massege;
+            }
+        }
+        .show-more {
+            @extend .button-massage;
+            width: 120px;
+            height: 32px;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        button {
+            margin-top: 30px;
+        }
+    }
+    .gradient1 {
+        height: 60px;
+        width: 100%;
+        background: $fontbutton;
+        transform: skewY(-1.1deg);
+        position: absolute;
+        margin-top: -40px;
+        z-index: -1;
+    }
+}
+
+// CONTENT
+// ---template
+.content-template {
+    background-color: $background1;
+    h2 {
+        font-style: italic;
+        font-size: 24px;
+        font-weight: lighter;
+        padding: 0 20%;
+    }
+    p {
+        padding: 0 20%;
+    }
+    .line {
+        padding: 0 20%;
+    }
+    a {
+        text-align: left;
+        margin-left: 20%;
+        text-decoration: none;
+        color: $fontbutton;
+        text-transform: uppercase;
+        font-size: 12px;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    i {
+        color: $fontbutton;
+        font-size: 12px;
+    }
+    .template-text {
+        padding: 10% 0;
+    }
+    .template-image {
+        padding: 10% 0 0;
+    }
+    .screen {
+        width: 100%;
+        position: relative;
+        bottom: -40px;
+    }
+}
+
+// ---services
+.content-services {
+    text-align: center;
+    h2 {
+        text-transform: capitalize;
+        font-style: italic;
+        font-size: 24px;
+    }
+    .services-text {
+        padding: 1% 0;
+    }
+    .services-icons {
+        padding-bottom: 3%;
+        .circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            border: 1px solid red;
+            overflow: hidden;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .circle1 {
+            background-image: url(http://f.cl.ly/items/0S3x0l1A3S1G1S1a1r0o/ikona1.png);
+            background-size: cover;
+        }
+        .circle2 {
+            background-image: url(http://f.cl.ly/items/062o011z2d33431E3M2U/ikona2.png);
+            background-position: center;
+        }
+        .circle3 {
+            background-image: url(http://f.cl.ly/items/3x3X1R0M2X2x2T1u0L2F/ikona3.png);
+            background-position: cover;
+        }
+        .circle4 {
+            background-image: url(http://f.cl.ly/items/300g1G2w0Y3s361o0B0J/ikona4.png);
+            background-position: cover;
+        }
+    }
+}
+
+// ---sentences
+.content-sentences {
+    .sentences {
+        background-image: url(http://f.cl.ly/items/041C1d420T301g2i1S2H/wuw.png);
+        min-height: 250px;
+        font-style: italic;
+        @extend .background-message;
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            color: $font-main;
+        }
+        .quotation {
+            font-size: 3em;
+            color: $fontbutton;
+            padding: 1%;
+            text-align: center;
+        }
+        .sentens {
+            .fa-angle-left {
+                float: left;
+                margin: auto 10%;
+                color: $arrowcolor;
+                padding: 3% 0;
+            }
+            .fa-angle-right {
+                float: right;
+                margin: auto 10%;
+                color: $arrowcolor;
+                padding: 3% 0;
+            }
+            p {
+                font-size: 16px;
+                width: 50%;
+                margin: auto auto;
+                padding: 3% 0;
+            }
+            i:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+// ---prices
+.content-prices {
+    background-color: $background1;
+    text-align: center;
+    padding: 5% 0;
+    span {
+        font-size: 12px;
+    }
+    h2 {
+        padding-top: 15px;
+        margin: 0;
+    }
+    p {
+        width: 70%;
+        text-align: center;
+        margin: 0 15%;
+        padding: 10px;
+    }
+    button {
+        @extend .button-massage;
+        font-size: 12px;
+        width: 70%;
+        height: 30px;
+        &:hover {
+            background-color: $background1;
+            color: #000;
+        }
+    }
+    .price-month {
+        background-color: $background-footer;
+        color: $font-main;
+        text-align: center;
+        position: relative;
+        padding: 5% 0;
+        button {
+            top: 87%;
+            left: 15%;
+            z-index: 2;
+            position: absolute;
+            background-color: $background1;
+            color: black;
+        }
+    }
+    .col-2 {
+        padding: 2% 1%;
+        p {
+            font-size: 14px;
+            margin: 0 15%;
+            padding: 20% 0;
+        }
+    }
+    .price-info {
+        background-color: #fff;
+        position: relative;
+        padding: 5% 0;
+    }
+    .business {
+        background-color: $fontbutton;
+    }
+}
+
+// ---benefits
+.benefits {
+    margin: auto 0;
+    padding: 0 12%;
+    .col-1 {
+        padding: 5% 0;
+        position: relative;
+    }
+    .col-3 {
+        padding: 3% 2%;
+        position: relative;
+    }
+    h3,
+    p {
+        text-align: left;
+        padding: 0 2%;
+    }
+    p {
+        font-size: 16px;
+    }
+    img {
+        top: 50%;
+        left: 10%;
+        position: absolute;
+        height: 50%;
+    }
+}
+
+// ---join-us
+.content-join {
+    background-color: $fontbutton;
+    color: $font-main;
+    text-align: center;
+    p {
+        font-size: 26px;
+        width: 50%;
+        float: left;
+        margin: 0;
+        margin-left: 10%;
+        padding: 5% 0;
+        text-transform: uppercase;
+        text-align: right;
+    }
+    span {
+        font-weight: bold;
+    }
+    button {
+        @extend .button-massage;
+        border-radius: 15px;
+        padding: 5px;
+        font-size: 16px;
+        margin: 5% 0;
+        width: 10%;
+        height: 34px;
+        &:hover {
+            background-color: #862a49;
+            color: #fff;
+            /* opacity: 0.3; */
+        }
+    }
+}
+
+// ---updates
+.content-updates {
+    text-align: center;
+    h2 {
+        text-transform: capitalize;
+        font-style: italic;
+    }
+}
+
+// ---content-tabs
+.content-tabs {
+    text-align: center;
+    .col-4 {
+        margin: auto auto;
+        padding: 3% 5px;
+    }
+    img {
+        width: 100%;
+    }
+    h5,
+    p {
+        margin: 0 0 5% 0;
+        padding: 5px;
+    }
+    .tab1,
+    .tab2,
+    .tab3,
+    .tab4,
+    .tab5,
+    .tab6 {
+        background-color: $background1;
+    }
+}
+
+// ---hero-bottom
+.hero-bottom {
+    background-image: url('http://f.cl.ly/items/041C1d420T301g2i1S2H/wuw.png');
+    padding: 5% 25%;
+    min-height: 450px;
+    @extend .background-message;
+    p {
+        text-align: center;
+        font-style: italic;
+        font-size: 16px;
+    }
+}
+
+// ---content-download
+.content-download {
+    padding: 5%;
+    .download-image img {
+        max-width: 100%;
+        height: auto;
+        box-shadow: 3px 0px 9px 1px rgba(0, 0, 0, 0.2), -3px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+    .download-text {
+        width: 100%;
+        text-align: left;
+        padding: 0 20%;
+    }
+}
+
+// ---footer
+.footer {
+    background-color: $background-footer;
+    color: $font-main;
+    padding: 2% 25%;
+    text-align: center;
+    p {
+        padding: 0 10%;
+        float: left;
+        margin: 0;
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-m-1 {
+        width: 8.33%;
+    }
+    .col-m-2 {
+        width: 16.66%;
+    }
+    .col-m-3 {
+        width: 25%;
+    }
+    .col-m-4 {
+        width: 33.33%;
+    }
+    .col-m-5 {
+        width: 41.66%;
+    }
+    .col-m-6 {
+        width: 50%;
+    }
+    .col-m-7 {
+        width: 58.33%;
+    }
+    .col-m-8 {
+        width: 66.66%;
+    }
+    .col-m-9 {
+        width: 75%;
+    }
+    .col-m-10 {
+        width: 83.33%;
+    }
+    .col-m-11 {
+        width: 91.66%;
+    }
+    .col-m-12 {
+        width: 100%;
+    }
+    [class*="col-"] {
+        padding: 1px;
+    }
+    .nav {
+        padding: 5% 0;
+        ul li a,
+        ul li {
+            padding: 0 5px;
+            font-size: 16px;
+        }
+        ul li a:hover {
+            color: #fff;
+        }
+    }
+    .benefits {
+        img {
+            top: 80%;
+            left: 50%;
+            height: 80%;
+        }
+    }
+    .content-prices {
+        .col-m-6 {
+            width: 50%;
+            margin: 0 auto;
+        }
+        button {
+            font-size: 12px;
+            height: 34px;
+        }
+        .price-month {
+            button {
+                top: 90%;
+            }
+        }
+    }
+    .content-join {
+        p {
+            font-size: 24px;
+            width: 100%;
+            margin: 0;
+            padding: 5% 0 0;
+            text-align: center;
+        }
+        button {
+            width: 15%;
+            height: 30px;
+        }
+    }
+    .footer {
+        display: block;
+        .footer p {
+            width: 100%;
+        }
+    }
+}
