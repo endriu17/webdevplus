@@ -260,10 +260,11 @@ $background-footer: #2b2b2b;
         font-style: italic;
         font-size: 24px;
         font-weight: lighter;
-        padding: 0 20%;
+        padding: 10% 20% 0;
     }
     p {
         padding: 0 20%;
+        font-size: 16px;
     }
     .line {
         padding: 0 20%;
@@ -341,7 +342,7 @@ $background-footer: #2b2b2b;
 .content-sentences {
     .sentences {
         background-image: url(http://f.cl.ly/items/041C1d420T301g2i1S2H/wuw.png);
-        min-height: 250px;
+        min-height: 400px;
         font-style: italic;
         @extend .background-message;
         a {
@@ -369,7 +370,7 @@ $background-footer: #2b2b2b;
                 padding: 3% 0;
             }
             p {
-                font-size: 16px;
+                font-size: 20px;
                 width: 50%;
                 margin: auto auto;
                 padding: 3% 0;
@@ -385,12 +386,12 @@ $background-footer: #2b2b2b;
 .content-prices {
     background-color: $background1;
     text-align: center;
-    padding: 5% 0;
+    padding: 2% 0;
     span {
-        font-size: 12px;
+        font-size: 14px;
     }
     h2 {
-        padding-top: 15px;
+        padding-top: 10px;
         margin: 0;
     }
     p {
@@ -402,8 +403,8 @@ $background-footer: #2b2b2b;
     button {
         @extend .button-massage;
         font-size: 12px;
-        width: 70%;
-        height: 30px;
+        width: 60%;
+        height: 35px;
         &:hover {
             background-color: $background1;
             color: #000;
@@ -417,26 +418,26 @@ $background-footer: #2b2b2b;
         position: relative;
         padding: 5% 0;
         button {
-            top: 87%;
-            left: 15%;
+            top: 90%;
+            left: 20%;
             z-index: 2;
             position: absolute;
             background-color: $background1;
             color: black;
+            font-weight: bold;
         }
     }
     .col-2 {
         padding: 2% 1%;
         p {
-            font-size: 14px;
-            margin: 0 15%;
-            padding: 20% 0;
+            font-size: 16px;
+            padding: 15% 0;
         }
     }
     .price-info {
         background-color: #fff;
         position: relative;
-        padding: 5% 0;
+        padding: 10% 0;
     }
     .business {
         background-color: $fontbutton;
@@ -476,6 +477,7 @@ $background-footer: #2b2b2b;
     background-color: $fontbutton;
     color: $font-main;
     text-align: center;
+    max-height: 300px;
     p {
         font-size: 26px;
         width: 50%;
@@ -493,12 +495,13 @@ $background-footer: #2b2b2b;
         border: none;
         background-color: $font-main;
         color: $fontbutton;
-        width: 10%;
+        width: 7%;
         padding: 5px;
         border-radius: 15px;
         font-size: 16px;
         margin: 5% 0;
         height: 34px;
+        font-weight: bold;
         &:hover {
             background-color: #862a49;
             color: $font-main;
@@ -707,7 +710,7 @@ $background-footer: #2b2b2b;
     }
     .footer {
         display: block;
-        .footer p {
+        p {
             width: 100%;
         }
     }

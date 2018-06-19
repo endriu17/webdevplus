@@ -264,11 +264,12 @@ p {
   font-style: italic;
   font-size: 24px;
   font-weight: lighter;
-  padding: 0 20%;
+  padding: 10% 20% 0;
 }
 
 .content-template p {
   padding: 0 20%;
+  font-size: 16px;
 }
 
 .content-template .line {
@@ -359,7 +360,7 @@ p {
 /* ---sentences--- */
 .content-sentences .sentences {
   background-image: url(http://f.cl.ly/items/041C1d420T301g2i1S2H/wuw.png);
-  min-height: 250px;
+  min-height: 400px;
   font-style: italic;
 }
 
@@ -391,7 +392,7 @@ p {
 }
 
 .content-sentences .sentences .sentens p {
-  font-size: 16px;
+  font-size: 20px;
   width: 50%;
   margin: auto auto;
   padding: 3% 0;
@@ -405,15 +406,15 @@ p {
 .content-prices {
   background-color: #f4f4f4;
   text-align: center;
-  padding: 5% 0;
+  padding: 2% 0;
 }
 
 .content-prices span {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .content-prices h2 {
-  padding-top: 15px;
+  padding-top: 10px;
   margin: 0;
 }
 
@@ -426,8 +427,8 @@ p {
 
 .content-prices button {
   font-size: 12px;
-  width: 70%;
-  height: 30px;
+  width: 60%;
+  height: 35px;
 }
 
 .content-prices button:hover {
@@ -445,12 +446,13 @@ p {
 }
 
 .content-prices .price-month button {
-  top: 87%;
-  left: 15%;
+  top: 90%;
+  left: 20%;
   z-index: 2;
   position: absolute;
   background-color: #f4f4f4;
   color: black;
+  font-weight: bold;
 }
 
 .content-prices .col-2 {
@@ -458,15 +460,14 @@ p {
 }
 
 .content-prices .col-2 p {
-  font-size: 14px;
-  margin: 0 15%;
-  padding: 20% 0;
+  font-size: 16px;
+  padding: 15% 0;
 }
 
 .content-prices .price-info {
   background-color: #fff;
   position: relative;
-  padding: 5% 0;
+  padding: 10% 0;
 }
 
 .content-prices .business {
@@ -511,6 +512,7 @@ p {
   background-color: #ed145b;
   color: #fff;
   text-align: center;
+  max-height: 300px;
 }
 
 .content-join p {
@@ -532,12 +534,13 @@ p {
   border: none;
   background-color: #fff;
   color: #ed145b;
-  width: 10%;
+  width: 7%;
   padding: 5px;
   border-radius: 15px;
   font-size: 16px;
   margin: 5% 0;
   height: 34px;
+  font-weight: bold;
 }
 
 .content-join button:hover {
@@ -744,7 +747,7 @@ p {
   .footer {
     display: block;
   }
-  .footer .footer p {
+  .footer p {
     width: 100%;
   }
 }
